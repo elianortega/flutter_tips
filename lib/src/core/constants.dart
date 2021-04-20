@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../tips/1/flutter_tip1.dart';
+import '../tips/1/tip1.dart';
+import '../tips/2/tip2.dart';
 
 class FlutterTip {
   FlutterTip({
@@ -18,6 +19,13 @@ final kFlutterTips = <FlutterTip>[
     navigate: (context) => Navigator.push(
       context,
       Tip1Page.route(),
+    ),
+  ),
+  FlutterTip(
+    title: 'On state change show dialog or call function',
+    navigate: (context) => Navigator.push(
+      context,
+      Tip2Page.route(),
     ),
   ),
 ];
